@@ -1,6 +1,7 @@
 
 @import url('components/tittle.css');
 @import url('components/subtitle.css');
+@import url('components/box.css');
 
 header {
     display: flex;
