@@ -1,0 +1,22 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #001D3D;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    border-bottom: 10px solid #F25A70;
+}
+
+.section .title {
+    margin-bottom: 60px;
+}
+.section .wrapper {
+    width: 960px;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .section .wrapper .column {
+     display: block;
+ }

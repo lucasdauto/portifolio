@@ -1,0 +1,16 @@
+.skill {
+    width: 430px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 36px;
+}
+
+.skill .info {
+    margin-left: 20px;
+}
+
+.skill .subtitle {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
