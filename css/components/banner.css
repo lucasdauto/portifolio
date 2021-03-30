@@ -1,0 +1,38 @@
+.banner {
+    box-sizing: border-box;
+    background-image: url('../../assets/img/banner.png');
+    background-repeat: no-repeat;
+    background-position:center center;
+    /* background-attachment: fixed; */
+    background-size: 100%;
+    height: 749px;
+    border-bottom: 10px solid #000;
+    padding-top: 115px;
+    padding-left: 90px;
+}
+
+.banner .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 630px;
+    
+}
+
+.banner .box {
+    margin-bottom: 40px;
+}
+
+.banner .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media (max-width: 1366px)
+{
+    .banner {
+        height: 680px;
+        padding-top: 220px;
+        padding-left: 45px;
+    }
+}
