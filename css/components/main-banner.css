@@ -1,4 +1,4 @@
-.banner {
+.main-banner {
     box-sizing: border-box;
     background-image: url('../../assets/img/banner.png');
     background-repeat: no-repeat;
@@ -11,18 +11,18 @@
     padding-left: 90px;
 }
 
-.banner .wrapper {
+.main-banner .wrapper {
     display: flex;
     flex-direction: column;
     width: 630px;
     
 }
 
-.banner .box {
+.main-banner .box {
     margin-bottom: 40px;
 }
 
-.banner .navigation {
+.main-banner .navigation {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -30,7 +30,7 @@
 
 @media (max-width: 1366px)
 {
-    .banner {
+    .main-banner {
         height: 680px;
         padding-top: 220px;
         padding-left: 45px;
