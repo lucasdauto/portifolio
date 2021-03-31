@@ -1,0 +1,18 @@
+.skill-tec {
+    display: flex;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 25px;
+    color: #FFF;
+}
+
+.skill-tec .icon {
+    height: 90px;
+    margin-right: 25px;
+}
+
+.skill-tec .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
