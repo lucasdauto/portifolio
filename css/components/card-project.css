@@ -1,26 +1,17 @@
 .card-project {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    background-color: #001D3D;
     width: 280px;
     height: 280px;
+    padding: 17px 35px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     box-shadow: 10px 10px 0px #FFFFFF;
 }
 
-.card-project:nth-child(1) {
-    background-color: #001D3D;
-}
-
-.card-project:nth-child(2) {
+.card-project.-blue {
     background-color: #4C5B84;
-}
-
-.card-project:nth-child(3) {
-    background-color: #F25A70;
-}
-
-.card-project .project {
-    margin: auto;
-    width: 210.5px;
 }

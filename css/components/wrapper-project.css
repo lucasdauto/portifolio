@@ -1,9 +1,0 @@
-.wrapper-project {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    width: 1152px;
-    margin: 0 calc((1354px - 1152px) / 2);
-    
-}
