@@ -1,4 +1,4 @@
-.action {
+.main-action {
     display: inline-flex;    
     align-items: center;
 
@@ -11,12 +11,12 @@
     transition: font-size 0.2s;
 }
 
-.action:hover{
+.main-action:hover{
     font-size: 24px;
     color: rgb(179, 179, 179);
 }
 
-.action::before {
+.main-action::before {
    content: "";
    width: 10px;
    height: 10px;
