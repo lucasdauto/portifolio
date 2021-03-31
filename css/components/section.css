@@ -9,20 +9,10 @@
     margin-bottom: 60px;
 }
 
-.section.-second {
+.section.-bgBlack {
     background-color: #000;
-    border-color: #4C5B84;
 }
 
-.section.-third {
-    border-color: #000;
-}
-
-.section.-fourth {
-    background: #3A4042;
-    border: none;
-}
-
-.section .main-title {
-    margin-bottom: 60px;
+.section.-bdFirst {
+    border-color: #3A4042;
 }
