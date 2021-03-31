@@ -5,9 +5,22 @@
     border-bottom: 10px solid #F25A70;
 }
 
+.main-section .main-title{
+    margin-bottom: 60px;
+}
+
 .main-section.-second {
     background-color: #000;
-    border-color: #001D3D;
+    border-color: #4C5B84;
+}
+
+.main-section.-third {
+    border-color: #000;
+}
+
+.main-section.-fourth {
+    background: #3A4042;
+    border: none;
 }
 
 .section .main-title {
