@@ -3,6 +3,10 @@
     height: 50px;
     background-color: #F25A70;
     cursor: pointer;
+    box-shadow: -5px 5px 0px #000000;
+}
+
+.button-arrow.-right {
     box-shadow: 5px 5px 0px #000000;
 }
 
@@ -25,4 +29,6 @@
 
 .button-arrow.-right::before {
     transform: rotate(180deg) translateX(-13px);
+
 }
+
