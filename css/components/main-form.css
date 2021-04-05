@@ -1,0 +1,30 @@
+.main-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-right: 80px;
+    height: 675px;
+}
+
+.main-form label {
+    color: #FFF;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 39px;
+}
+
+.main-form input {
+    height: 50px;
+    border: 5px solid #000;
+}
+
+.main-form textarea {
+    border: 5px solid #000;
+    height: 320px;
+}
+
+.main-form .main-button {
+    margin-top: 40px;
+}
