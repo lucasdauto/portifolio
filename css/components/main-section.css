@@ -21,6 +21,11 @@
     background-color: #7C5E99;
 }
 
+.main-section.-bgThird {
+    background-color: #3A4042;
+    border: none;
+}
+
 .main-section.-bdBlack {
     border-color: #000;
 }
