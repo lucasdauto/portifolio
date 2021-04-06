@@ -1,0 +1,15 @@
+.main-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+.main-footer .items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    width: 215px;
+}
