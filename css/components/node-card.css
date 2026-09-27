@@ -70,3 +70,34 @@
 .node-card.-second .experience {
     background-color: #F7EA2B;
 }
+
+@media (max-width: 480px) {
+    .node-card {
+        flex-basis: calc(100vw - 40px);
+    }
+
+    .node-card .title,
+    .node-card .experience {
+        width: 100%;
+    }
+}
+
+@media (max-width: 360px) {
+    .node-card .title {
+        margin-bottom: 32px;
+    }
+
+    .node-card .experience {
+        min-height: 0;
+        padding: 16px;
+    }
+
+    .node-card .company {
+        font-size: 12px;
+    }
+
+    .node-card .role,
+    .node-card .experience p {
+        font-size: 14px;
+    }
+}

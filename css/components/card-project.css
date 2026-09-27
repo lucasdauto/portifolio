@@ -27,6 +27,7 @@
     font-family: 'Press Start 2P', cursive;
     font-size: 17px;
     line-height: 1.5;
+    overflow-wrap: anywhere;
 }
 
 .card-project p {
@@ -37,4 +38,21 @@
 .card-project span {
     color: #F25A70;
     font-weight: 700;
+}
+
+@media (max-width: 360px) {
+    .card-project {
+        min-height: 250px;
+        padding: 20px;
+        box-shadow: 6px 6px 0 #FFF;
+    }
+
+    .card-project figcaption {
+        font-size: 13px;
+    }
+
+    .card-project p,
+    .card-project span {
+        font-size: 14px;
+    }
 }

@@ -84,6 +84,14 @@
         gap: 5px;
         margin-bottom: 7px;
     }
+
+    .skill-data strong {
+        font-size: 10px;
+    }
+
+    .skill-data span {
+        font-size: 9px;
+    }
 }
 
 .skill-icon.-php,

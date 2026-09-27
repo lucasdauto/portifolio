@@ -13,7 +13,7 @@
 .main-banner .wrapper {
     display: flex;
     flex-direction: column;
-    width: 630px;
+    width: min(630px, 100%);
     
 }
 
@@ -55,5 +55,53 @@
         justify-content: flex-start;
         flex-wrap: wrap;
         gap: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .main-banner {
+        min-height: 0;
+        padding: 35px 12px 30px;
+    }
+
+    .main-banner .main-box {
+        margin-bottom: 20px;
+        padding: 24px 14px;
+        box-shadow: 6px 6px 0 #000;
+    }
+
+    .main-banner .main-title {
+        font-size: 25px;
+        line-height: 1.15;
+    }
+
+    .main-banner .main-subtitle {
+        font-size: 14px;
+        line-height: 1.35;
+    }
+
+    .main-banner .navigation {
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    .main-banner .main-button {
+        padding: 14px 10px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 280px) {
+    .main-banner .main-title {
+        font-size: 22px;
+    }
+
+    .main-banner .main-subtitle {
+        font-size: 13px;
+    }
+
+    .main-banner .main-button {
+        flex: 1 1 0;
+        text-align: center;
     }
 }

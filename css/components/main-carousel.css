@@ -52,6 +52,7 @@
     scrollbar-width: none;
     cursor: grab;
     scroll-snap-type: x proximity;
+    touch-action: auto;
 }
 
 .main-carousel .items::-webkit-scrollbar {
@@ -110,5 +111,27 @@
     .carousel-progress {
         margin-top: 20px;
         font-size: 9px;
+    }
+}
+
+@media (max-width: 360px) {
+    .main-carousel::before,
+    .main-carousel::after {
+        left: 20px;
+        width: calc(100% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .main-carousel {
+        padding: 0 20px;
+    }
+
+    .main-carousel .button-arrow {
+        display: none;
+    }
+
+    .main-carousel .elements {
+        gap: 16px;
     }
 }

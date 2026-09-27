@@ -88,3 +88,21 @@
         min-height: 74px;
     }
 }
+
+@media (max-width: 360px) {
+    .wrapper-skill {
+        gap: 32px;
+        padding: 0 16px;
+    }
+
+    .skill-status {
+        margin-right: 16px;
+        margin-left: 16px;
+        padding: 18px;
+        box-shadow: 6px 6px 0 #000;
+    }
+
+    .skill-status p {
+        font-size: 15px;
+    }
+}

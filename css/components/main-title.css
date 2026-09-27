@@ -10,3 +10,16 @@
     text-shadow: none;
     text-align: center;
 }
+
+@media (max-width: 360px) {
+    .main-title.-second {
+        font-size: 30px;
+        line-height: 1.25;
+    }
+}
+
+@media (max-width: 280px) {
+    .main-title.-second {
+        font-size: 25px;
+    }
+}

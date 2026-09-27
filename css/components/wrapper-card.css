@@ -17,4 +17,15 @@
         grid-template-columns: minmax(0, 280px);
         padding: 0 20px;
     }
+
+    .wrapper-card > a {
+        min-width: 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .wrapper-card {
+        gap: 28px;
+        padding: 0 16px;
+    }
 }

@@ -29,3 +29,18 @@
         font-size: 20px;
     }
 }
+
+@media (max-width: 360px) {
+    .main-contact {
+        padding: 0 16px;
+    }
+
+    .main-contact .actions {
+        gap: 12px;
+    }
+
+    .main-contact .main-button {
+        font-size: 16px;
+        padding: 14px 12px;
+    }
+}
