@@ -1,22 +1,110 @@
 .skill-tec {
-    display: flex;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 62px minmax(0, 1fr);
+    gap: 16px;
     align-items: center;
+    min-height: 88px;
+    padding: 12px;
+    border: 4px solid #000;
+    background-color: #3A4042;
+    box-shadow: 5px 5px 0 #000;
     font-family: 'Press Start 2P', cursive;
-    font-size: 25px;
     color: #FFF;
 }
 
-.skill-tec .icon {
-    width: 90px;
-    margin-right: 25px;
-}
-
-.skill-tec .right {
+.skill-tec .skill-icon {
+    box-sizing: border-box;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    border: 4px solid #000;
+    background-color: #FFF;
+    object-fit: contain;
+    padding: 5px;
+    color: #FFF;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    line-height: 1;
+    text-shadow: 2px 2px 0 #000;
+    image-rendering: pixelated;
 }
 
-.skill-tec .title {
-    margin-bottom: 12px;
+.skill-tec canvas.skill-icon {
+    display: block;
+    place-self: center;
+    padding: 0;
+    background-color: #000;
+}
+
+.skill-tec img.-php-logo {
+    object-fit: cover;
+}
+
+.skill-data {
+    min-width: 0;
+}
+
+.skill-data > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.skill-data strong {
+    overflow-wrap: anywhere;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.skill-data span {
+    flex: 0 0 auto;
+    color: #F7EA2B;
+    font-size: 10px;
+}
+
+@media (max-width: 360px) {
+    .skill-tec {
+        grid-template-columns: 54px minmax(0, 1fr);
+        gap: 10px;
+    }
+
+    .skill-tec .skill-icon {
+        width: 52px;
+        height: 52px;
+    }
+
+    .skill-data > div {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 7px;
+    }
+}
+
+.skill-icon.-php,
+.skill-icon.-integration,
+.skill-icon.-mysql,
+.skill-icon.-postgres,
+.skill-icon.-sqlserver,
+.skill-icon.-database,
+.skill-icon.-gcp,
+.skill-icon.-aws,
+.skill-icon.-docker,
+.skill-icon.-n8n,
+.skill-icon.-eloquent,
+.skill-icon.-jobs,
+.skill-icon.-jwt,
+.skill-icon.-test,
+.skill-icon.-git,
+.skill-icon.-specs,
+.skill-icon.-fastapi,
+.skill-icon.-wordpress,
+.skill-icon.-bootstrap,
+.skill-icon.-jquery {
+    background-color: #000;
 }

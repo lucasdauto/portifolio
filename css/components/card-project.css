@@ -1,17 +1,40 @@
 .card-project {
-    background-color: #001D3D;
-    width: 280px;
-    height: 280px;
-    padding: 17px 35px;
     box-sizing: border-box;
-
     display: flex;
-    align-items: center;
-    justify-content: center;
-
-    box-shadow: 10px 10px 0px #FFFFFF;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #001D3D;
+    width: min(280px, 100%);
+    min-height: 280px;
+    margin: 0;
+    padding: 28px;
+    border: 5px solid #000;
+    box-shadow: 10px 10px 0 #FFF;
+    color: #FFF;
+    transition: transform 180ms ease-in-out;
 }
 
 .card-project.-blue {
     background-color: #4C5B84;
+}
+
+.card-project:hover,
+.wrapper-card > a:focus .card-project {
+    transform: translate(-4px, -4px);
+}
+
+.card-project figcaption {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.card-project p {
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.card-project span {
+    color: #F25A70;
+    font-weight: 700;
 }

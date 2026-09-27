@@ -1,14 +1,40 @@
-.progress-bar {
+.skill-tec progress {
+    appearance: none;
+    display: block;
     box-sizing: border-box;
-    background: #FFFFFF;
-    border: 5px solid #000;
-    height: 40px;
+    width: 100%;
+    height: 20px;
+    border: 4px solid #000;
+    background-color: #FFF;
 }
 
-.progress-bar::-moz-progress-bar {
+.skill-tec progress::-webkit-progress-bar {
+    background-color: #FFF;
+}
+
+.skill-tec progress::-webkit-progress-value {
     background-color: #F25A70;
+    background-image: repeating-linear-gradient(90deg, transparent 0, transparent 17px, #000 17px, #000 20px);
 }
 
-.progress-bar::-webkit-progress-value { 
-    background-color: #F25A70; 
- }
+.skill-tec progress::-moz-progress-bar {
+    background-color: #F25A70;
+    background-image: repeating-linear-gradient(90deg, transparent 0, transparent 17px, #000 17px, #000 20px);
+}
+
+@media (max-width: 400px) {
+    .skill-tec {
+        grid-template-columns: 52px minmax(0, 1fr);
+        gap: 12px;
+        padding: 10px;
+    }
+
+    .skill-tec .skill-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .skill-data strong {
+        font-size: 10px;
+    }
+}

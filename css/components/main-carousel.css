@@ -11,7 +11,7 @@
     display: block;
     position: absolute;
     left: 40px;
-    top: 35px;
+    top: 50px;
     height: 3.5px;
     width: calc(100% - 80px);
     background-color: #000;
@@ -23,7 +23,7 @@
     display: block;
     position: absolute;
     left: 0;
-    top: 35px;
+    top: 50px;
     height: 0px;
     width: 100%;
     border-bottom: 2.5px dashed #000;
@@ -32,9 +32,9 @@
 
 .main-carousel .button-arrow {
     position: absolute;
-    bottom: 70px;
-    transform: translateY(50%);
-
+    top: 55%;
+    transform: translateY(-50%);
+    z-index: 1;
 }
 
 .main-carousel .button-arrow.-left {
@@ -47,12 +47,68 @@
 
 .main-carousel .items {
     width: 100%;
-    overflow: hidden;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    cursor: grab;
+    scroll-snap-type: x proximity;
+}
+
+.main-carousel .items::-webkit-scrollbar {
+    display: none;
+}
+
+.main-carousel .items.-dragging {
+    cursor: grabbing;
+    scroll-behavior: auto;
 }
 
 .main-carousel .elements {
     display: flex;
-    justify-content: space-evenly;
-    transition: transform 500ms ease-in;
+    justify-content: flex-start;
+    gap: 40px;
+    padding: 0 20px;
 }
 
+.main-carousel .node-card {
+    scroll-snap-align: start;
+}
+
+.main-carousel .button-arrow:disabled {
+    opacity: .35;
+    cursor: default;
+}
+
+.carousel-progress {
+    display: block;
+    width: max-content;
+    margin: 24px auto 0;
+    padding: 8px 12px;
+    border: 3px solid #000;
+    background-color: #001D3D;
+    box-shadow: 4px 4px 0 #000;
+    color: #F7EA2B;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+}
+
+@media (max-width: 600px) {
+    .main-carousel {
+        padding: 0 55px;
+    }
+
+    .main-carousel::after {
+        left: 20px;
+        width: calc(100% - 40px);
+    }
+
+    .main-carousel .elements {
+        gap: 20px;
+        padding: 0;
+    }
+
+    .carousel-progress {
+        margin-top: 20px;
+        font-size: 9px;
+    }
+}
